@@ -1,0 +1,9 @@
+4/2/2025
+Overview:
+This iteration of the project trains a HistGradientBoosting model and saves the model as well as all the other important information into separate files in order for the model to be deployed. Despite HistGradientBoosting being good at handling highly imbalanced data I have to some degree employed SMOTE (Synthetic Minority Oversampling Technique) to supplement the training. The training also consists of a threshold selection procedure in order to select the optimal selection threshold that yields the desirable recall and precision. This all is contained in the training part of the algorithm.
+
+The other part of the algorithm applies the trained model on a new previously unseen dataset (assuming the anonymized columns in it are equivalent to the training set).
+
+The last characteristic of this algorithm is the evaluation metrics of the model’s performance on the new data, including an confusion matrix and a precision-recall curve where the area under said curve is of interest when evaluating the performance of the model.
+
+This model manages an approximately 80% recall rate and a somewhat acceptable false positive rate.
