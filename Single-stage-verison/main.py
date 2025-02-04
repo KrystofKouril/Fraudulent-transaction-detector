@@ -318,7 +318,7 @@ def main():
         print(f"F1 Score: {metrics['f1']:.4f}")
 
     elif mode == "infer":
-        new_data_path = "test_data.csv" #input("Enter path to new dataset: ").strip()
+        new_data_path = input("Enter path to new dataset: ").strip()
 
         print("Making predictions on new dataset...")
         results_df = predict_new_data(
